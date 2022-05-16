@@ -1,15 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="src/css/main.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="src/js/main.js"></script>
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Тут я підключала ті шрифти, які в хедері та херо використовувались, в ідеалі б якось узагальнити всіх шрифти, які є для усіх секцій і додати їх одним лінком, а цей видалити -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Я підключала cdn swiper, щоб слайдер робити, тож якщо інший слайдер теж через це робили і вже підключали, то можна видалити -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <!-- я писала код для своїх секцій в окремому файлі js -->
+    <script src="src/js/header.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-holder">
+                <a href="#" class="logo-link">
+                    <img class='logo' src="src/image/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="nav-and-social">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" id="about-btn" href="#">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" id="projects-btn" href="#">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="news-btn">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="contact-btn">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <ul class="social-list">
+                        <li class="social-icon">
+                            <a href="#" class="social-link">
+                                <img src="src/image/facebook.svg" alt="" class="social-image">
+                            </a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="#" class="social-link">
+                                <img src="src/image/twitter.svg" alt="" class="social-image">
+                            </a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="#" class="social-link">
+                                <img src="src/image/instagram.svg" alt="" class="social-image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-opener">
+                <span class="burger"></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" id='hero' style="background-image: url('src/image/hero.png');">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="hero-text">
+                                <div class="title-holder">
+                                    <h1 class="h1">Simple & Modern</h1>
+                                </div>
+                                <div class="subtitle-holder">
+                                    <h2 class="h2">We make the world beautiful everyday</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero-text">
+                                <div class="title-holder">
+                                    <h1 class="h1">Safe & Sustainable</h1>
+                                </div>
+                                <div class="subtitle-holder">
+                                    <h2 class="h2">We make the world beautiful everyday</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero-text">
+                                <div class="title-holder">
+                                    <h1 class="h1">Simple & Modern</h1>
+                                </div>
+                                <div class="subtitle-holder">
+                                    <h2 class="h2">We make the world beautiful everyday</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero-text">
+                                <div class="title-holder">
+                                    <h1 class="h1">Safe & Sustainable</h1>
+                                </div>
+                                <div class="subtitle-holder">
+                                    <h2 class="h2">We make the world beautiful everyday</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero-text">
+                                <div class="title-holder">
+                                    <h1 class="h1">Simple & Modern</h1>
+                                </div>
+                                <div class="subtitle-holder">
+                                    <h2 class="h2">We make the world beautiful everyday</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="btn-holder">
+                    <button class="scroll-btn" id='scroll-down-btn'>
+            <span class="arrow">
+              <svg class="arrow-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/></svg>
+            </span>
+          </button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
