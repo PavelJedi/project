@@ -379,7 +379,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.hero .swiper {
+.hero .swiper-header {
   height: 380px;
   width: 100%;
 }

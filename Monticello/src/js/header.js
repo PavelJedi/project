@@ -58,7 +58,7 @@ scrollDown.addEventListener('click', () => {
 })
 
 //swiper header
-const swiper = new Swiper('.swiper', {
+const swiperHeader = new Swiper('.swiper-header', {
 
     autoplay: {
         delay: 4000,
@@ -69,6 +69,6 @@ const swiper = new Swiper('.swiper', {
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-header',
     },
 });
