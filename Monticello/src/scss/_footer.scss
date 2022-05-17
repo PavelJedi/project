@@ -1,0 +1,80 @@
+.footer {
+    position: relative;
+    max-width: 1600px;
+    padding-top: 240px;
+    margin: 0 auto;
+    background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%), url(../image/fotter-back.png);    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .container {
+        // position: absolute;
+        // top: 240px;
+        // left: 414px;
+        max-width: 770px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include breakpoint(lg) {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+
+        // @include breakpoint(xs) {
+        //     justify-content: space-around;
+        // }
+    }
+}
+
+.logo-holder {
+    width: 50%;
+    margin-bottom: 233px;
+
+    @include breakpoint(md) {
+        width: 100%;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .logo-link {
+        &:hover {
+            opacity: 50%;
+            transition: 0.5s;
+        } 
+    }
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+
+        // @include breakpoint(sm) {
+        //     text-align: center;
+        // }
+    }
+}
+
+.social-holder {
+    max-width: 160px;
+    display: flex;
+    justify-content: end;
+
+    @include breakpoint(md) {
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    }
+
+    svg {
+        margin-left: 20px;
+
+        &:hover {
+            opacity: 50%;
+            transition: 0.5s;
+            transform: scale(1.3);
+        } 
+}
