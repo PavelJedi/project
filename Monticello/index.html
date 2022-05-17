@@ -13,7 +13,7 @@
     <!-- Я підключала cdn swiper, щоб слайдер робити, тож якщо інший слайдер теж через це робили і вже підключали, то можна видалити -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script defer src="src/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="src/js/header.js" defer></script>
 </head>
@@ -183,6 +183,100 @@
 
     </div>
   </section>
-    </main>
+	<section class="news" style="background-image: url(src/image/news-background.png)" id="news">
+		<div class="container">
+			<div class="title-line"></div>
+			<h2 class="news-title">LATEST NEWS</h2>
+			<div class="swiper mySwiper block-holder">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news1.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">Free directories: directories are perfect for customers that are
+								searching
+								for...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile1.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">ALJA BRUN</span>
+								<span class="date">20 Jan 2020</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news2.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">EFFECTIVE ADVERTISING POINTERS.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">Having a home based business is a wonderful asset to your life...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile2.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">DOMINIC FREEMAN</span>
+								<span class="date">13 Dec 2019</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news-3.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">There are many things that are important to catalog design...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile3.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">ALICE WARD</span>
+								<span class="date">30 Nov 2019</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn-next"></button>
+			<button class="btn-prev"></button>
+			<div class="pagination">
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery-line"></div>
+			<h2 class="gallery-title">GALLERY</h2>
+			<div class="image-holder">
+				<ul class="image-list">
+					<li class="image-item image-item1"><img src="src/image/gallery1.png" alt=""></li>
+					<li class="image-item image-item2"><img src="src/image/gallery2.png" alt=""></li>
+					<li class="image-item image-item3"><img src="src/image/gallery3.png" alt=""></li>
+					<li class="image-item image-item4"><img src="src/image/gallery4.png" alt=""></li>
+					<li class="image-item image-item5"><img src="src/image/gallery5.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="btn-holder">
+			<a href="#" class="gallery-btn">SEE MORE</a>
+			</div>
+		</div>
+	</section>
+</main>
 </body>
 </html>
