@@ -1,0 +1,195 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.header {
+    * {
+        &:focus {
+            outline: none;
+        }
+    }
+    width: 100%;
+    padding: 25px 0;
+    top: 0;
+    left: 0;
+    color: $white;
+    font-family: $font-family-header;
+    background-color: rgba( 126, 90, 255, 0.7);
+    transition: all ease-out 0.3s;
+    position: fixed;
+    z-index: 30;
+    @include breakpoint-mf('lg') {
+        background-color: transparent;
+        padding: 53px 0;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+        max-width: 1210px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        transition: all ease-out 0.3s;
+    }
+    .logo-holder {
+        width: 70%;
+        max-width: 241px;
+    }
+    .logo-link {
+        &:focus-visible {
+            outline: 1px solid $white;
+            outline-offset: 5px;
+        }
+    }
+    .nav-and-social {
+        width: 100%;
+        position: absolute;
+        top: 104px;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: all ease-out 0.3s;
+        background-color: rgba( 126, 90, 255);
+        @include breakpoint-mf('lg') {
+            flex-direction: row;
+            position: static;
+            transform: translateX(0);
+            width: 65%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+    .nav {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include breakpoint-mf('lg') {
+            margin-bottom: 0;
+            width: 66%;
+        }
+    }
+    .nav-list {
+        @include breakpoint-mf('lg') {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .nav-item {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0;
+        transition: all ease-out 0.3s;
+    }
+    .nav-link {
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 2px solid $white;
+            margin-right: 14px;
+            transition: all ease-out 0.3s;
+        }
+        &:hover::before,
+        &:active::before,
+        &:focus-visible::before {
+            background-color: $white;
+        }
+    }
+    .social-list {
+        display: flex;
+    }
+    .social-link {
+        display: inline-block;
+        transition: ease-out all 0.3s;
+        &:hover,
+        &:active,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+    .social-image {
+        width: 100%;
+        padding: 5px;
+        position: relative;
+        z-index: 32;
+        transition: all ease-out 0.3s;
+    }
+}
+
+.nav-opener {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    .burger {
+        display: block;
+        height: 11px;
+        border-bottom: 3px solid $white;
+        transition: all ease-out 0.3s;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-bottom: 3px solid $white;
+            transition: all ease-out 0.3s;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 1px;
+            left: 0;
+            border-bottom: 3px solid $white;
+            transition: all ease-out 0.3s;
+        }
+    }
+    @include breakpoint-mf('lg') {
+        display: none;
+    }
+}
+
+.active {
+    height: 104px;
+    background-color: rgba( 126, 90, 255);
+    .nav-and-social {
+        transform: translateX(0);
+    }
+    .burger {
+        border-bottom: none;
+        &::before {
+            transform: translateY(8.5px) rotate(45deg);
+        }
+        &::after {
+            transform: translateY(-7.5px) rotate(-45deg);
+        }
+    }
+}
