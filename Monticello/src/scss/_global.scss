@@ -1,10 +1,3 @@
-//це глобальні штуки, вони в приницпі ніби у всіх однакові мають бути
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 .container {
     width: 100%;
     //по дизайну ширина 1170, але плюс падінги 20px по боках - 1210 виходить
@@ -12,7 +5,28 @@
     padding: 0 16px;
     margin: 0 auto;
     //я робила через мобайл фьорст, на мобільному 16 паддінг - далі - 20
-    @include breakpoint-mf ('md') {
+    @include breakpoint-mf('md') {
         padding: 0 20px;
     }
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
 }
