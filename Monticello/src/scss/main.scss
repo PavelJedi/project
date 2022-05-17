@@ -1,8 +1,10 @@
 @import 'mixins';
-@import '../scss/blocks/var';
+@import 'blocks/var';
 @import 'global';
-@import '../scss/blocks/trade-center';
+@import 'blocks/trade-center';
 @import 'var';
 @import 'global';
 @import 'blocks/header';
 @import 'blocks/hero';
+@import "blocks/news";
+@import "blocks/gallery";

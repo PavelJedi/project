@@ -1,187 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Тут я підключала ті шрифти, які в хедері та херо використовувались, в ідеалі б якось узагальнити всіх шрифти, які є для усіх секцій і додати їх одним лінком, а цей видалити -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- Я підключала cdn swiper, щоб слайдер робити, тож якщо інший слайдер теж через це робили і вже підключали, то можна видалити -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
-    <!-- я писала код для своїх секцій в окремому файлі js -->
-    <script src="src/js/header.js" defer></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Тут я підключала ті шрифти, які в хедері та херо використовувались, в ідеалі б якось узагальнити всіх шрифти, які є для усіх секцій і додати їх одним лінком, а цей видалити -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro&display=swap"
+	      rel="stylesheet">
+	<!-- Я підключала cdn swiper, щоб слайдер робити, тож якщо інший слайдер теж через це робили і вже підключали, то можна видалити -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="src/js/main.js"></script>
+	<!-- я писала код для своїх секцій в окремому файлі js -->
+	<script src="src/js/header.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo-holder">
-                <a href="#" class="logo-link">
-                    <img class='logo' src="src/image/logo.svg" alt="logo">
-                </a>
-            </div>
-            <div class="nav-and-social">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" id="about-btn" href="#">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" id="projects-btn" href="#">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="news-btn">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="contact-btn">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social">
-                    <ul class="social-list">
-                        <li class="social-icon">
-                            <a href="#" class="social-link">
-                                <img src="src/image/facebook.svg" alt="" class="social-image">
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#" class="social-link">
-                                <img src="src/image/twitter.svg" alt="" class="social-image">
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#" class="social-link">
-                                <img src="src/image/instagram.svg" alt="" class="social-image">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="nav-opener">
-                <span class="burger"></span>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="hero" id='hero' style="background-image: url('src/image/hero.png');">
-            <div class="container">
-                <div class="swiper swiper-header">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="hero-text">
-                                <div class="title-holder">
-                                    <h1 class="h1">Simple & Modern</h1>
-                                </div>
-                                <div class="subtitle-holder">
-                                    <h2 class="h2">We make the world beautiful everyday</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="hero-text">
-                                <div class="title-holder">
-                                    <h1 class="h1">Safe & Sustainable</h1>
-                                </div>
-                                <div class="subtitle-holder">
-                                    <h2 class="h2">We make the world beautiful everyday</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="hero-text">
-                                <div class="title-holder">
-                                    <h1 class="h1">Simple & Modern</h1>
-                                </div>
-                                <div class="subtitle-holder">
-                                    <h2 class="h2">We make the world beautiful everyday</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="hero-text">
-                                <div class="title-holder">
-                                    <h1 class="h1">Safe & Sustainable</h1>
-                                </div>
-                                <div class="subtitle-holder">
-                                    <h2 class="h2">We make the world beautiful everyday</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="hero-text">
-                                <div class="title-holder">
-                                    <h1 class="h1">Simple & Modern</h1>
-                                </div>
-                                <div class="subtitle-holder">
-                                    <h2 class="h2">We make the world beautiful everyday</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-header"></div>
-                <div class="btn-holder">
-                    <button class="scroll-btn" id='scroll-down-btn'>
+<header class="header">
+	<div class="container">
+		<div class="logo-holder">
+			<a href="#" class="logo-link">
+				<img class='logo' src="src/image/logo.svg" alt="logo">
+			</a>
+		</div>
+		<div class="nav-and-social">
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item"><a class="nav-link" id="about-btn" href="#">About us</a></li>
+					<li class="nav-item"><a class="nav-link" id="projects-btn" href="#">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" id="news-btn">News</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" id="contact-btn">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="social">
+				<ul class="social-list">
+					<li class="social-icon">
+						<a href="#" class="social-link">
+							<img src="src/image/facebook.svg" alt="" class="social-image">
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="#" class="social-link">
+							<img src="src/image/twitter.svg" alt="" class="social-image">
+						</a>
+					</li>
+					<li class="social-icon">
+						<a href="#" class="social-link">
+							<img src="src/image/instagram.svg" alt="" class="social-image">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav-opener">
+			<span class="burger"></span>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<section class="hero" id='hero' style="background-image: url('src/image/hero.png');">
+		<div class="container">
+			<div class="swiper swiper-header">
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="hero-text">
+							<div class="title-holder">
+								<h1 class="h1">Simple & Modern</h1>
+							</div>
+							<div class="subtitle-holder">
+								<h2 class="h2">We make the world beautiful everyday</h2>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-text">
+							<div class="title-holder">
+								<h1 class="h1">Safe & Sustainable</h1>
+							</div>
+							<div class="subtitle-holder">
+								<h2 class="h2">We make the world beautiful everyday</h2>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-text">
+							<div class="title-holder">
+								<h1 class="h1">Simple & Modern</h1>
+							</div>
+							<div class="subtitle-holder">
+								<h2 class="h2">We make the world beautiful everyday</h2>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-text">
+							<div class="title-holder">
+								<h1 class="h1">Safe & Sustainable</h1>
+							</div>
+							<div class="subtitle-holder">
+								<h2 class="h2">We make the world beautiful everyday</h2>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-text">
+							<div class="title-holder">
+								<h1 class="h1">Simple & Modern</h1>
+							</div>
+							<div class="subtitle-holder">
+								<h2 class="h2">We make the world beautiful everyday</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-header"></div>
+			<div class="btn-holder">
+				<button class="scroll-btn" id='scroll-down-btn'>
             <span class="arrow">
-              <svg class="arrow-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              <svg class="arrow-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
                 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
                 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/></svg>
             </span>
-          </button>
-                </div>
-            </div>
-        </section>
-    <section id="section-center" class="what-we-do">
-    <div class="container">
-      <span class="line"></span>
-      <span class="what-we-do-pseudo-titel">ONE WORLD</span>
-      <h2 class="what-we-do-title">WHAT WE DO</h2>
-      <div class="trade-center">
-          <div class="back-holder">
-            <div class="back-color" style="background-color: #55B7FF"></div>
-            <div class="img-holder">
-              <img src="src/image/trade-centr.png" alt="description">
-            </div>
-          </div>
-        <div class="text-holder">
-          <span class="pseudo-titel">ONE WORLD</span>
-          <h2 class="sub-title">TRADE CENTER</h2>
-          <div class="trade-text">
-            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-          </div>
-          <div class="btn-holder">
-            <a href="#" class="btn">MORE DETAILS</a>
-          </div>
-          <a href="#" class="location">
+				</button>
+			</div>
+		</div>
+	</section>
+	<section id="section-center" class="what-we-do">
+		<div class="container">
+			<span class="line"></span>
+			<span class="what-we-do-pseudo-titel">ONE WORLD</span>
+			<h2 class="what-we-do-title">WHAT WE DO</h2>
+			<div class="trade-center">
+				<div class="back-holder">
+					<div class="back-color" style="background-color: #55B7FF"></div>
+					<div class="img-holder">
+						<img src="src/image/trade-centr.png" alt="description">
+					</div>
+				</div>
+				<div class="text-holder">
+					<span class="pseudo-titel">ONE WORLD</span>
+					<h2 class="sub-title">TRADE CENTER</h2>
+					<div class="trade-text">
+						<p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+							truth is, our thoughts are very powerful.</p>
+					</div>
+					<div class="btn-holder">
+						<a href="#" class="btn">MORE DETAILS</a>
+					</div>
+					<a href="#" class="location">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16"
-            height= "16"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/>
+                   height="16"><path
+		              d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/>
             </svg>
           </span>
-        New York City, United States - 1776 feet</a>
-        </div>
-      </div>
-      <div class="trade-center">
-        <div class="back-holder">
-            <div class="back-color violet" style="background-color: #7E5AFF;"></div>
-            <div class="img-holder">
-              <img src="src/image/commerce-centre.png" alt="description">
-            </div>
-          </div>
-        <div class="text-holder">
-          <span class="pseudo-titel">ONE WORLD</span>
-          <h2 class="sub-title">TRADE CENTER</h2>
-          <div class="trade-text">
-            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
-          </div>
-          <div class="btn-holder">
-            <a href="#" class="btn">MORE DETAILS</a>
-          </div>
-          <a class="location"> <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16"
-            height= "16"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg></span> Hong Kong - 1588 feet </a>
-        </div>
-      </div>
-    </div>
-  </section>
-    </main>
+						New York City, United States - 1776 feet</a>
+				</div>
+			</div>
+			<div class="trade-center">
+				<div class="back-holder">
+					<div class="back-color violet" style="background-color: #7E5AFF;"></div>
+					<div class="img-holder">
+						<img src="src/image/commerce-centre.png" alt="description">
+					</div>
+				</div>
+				<div class="text-holder">
+					<span class="pseudo-titel">ONE WORLD</span>
+					<h2 class="sub-title">TRADE CENTER</h2>
+					<div class="trade-text">
+						<p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+							truth is, our thoughts are very powerful.</p>
+					</div>
+					<div class="btn-holder">
+						<a href="#" class="btn">MORE DETAILS</a>
+					</div>
+					<a class="location"> <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16"
+					                                height="16"><path
+							d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg></span>
+						Hong Kong - 1588 feet </a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news" style="background-image: url(src/image/news-background.png)" id="news">
+		<div class="container">
+			<div class="title-line"></div>
+			<h2 class="news-title">LATEST NEWS</h2>
+			<div class="swiper mySwiper block-holder">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news1.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">Free directories: directories are perfect for customers that are
+								searching
+								for...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile1.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">ALJA BRUN</span>
+								<span class="date">20 Jan 2020</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news2.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">EFFECTIVE ADVERTISING POINTERS.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">Having a home based business is a wonderful asset to your life...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile2.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">DOMINIC FREEMAN</span>
+								<span class="date">13 Dec 2019</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide block">
+						<div class="img-holder">
+							<img src="src/image/news-3.png" alt="#" class="img-news">
+						</div>
+						<h2 class="block-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h2>
+						<div class="desc-holder">
+							<p class="block-desc">There are many things that are important to catalog design...</p>
+						</div>
+						<div class="profile-holder">
+							<div class="profile-image">
+								<img src="src/image/profile3.png" alt="#" class="profile">
+							</div>
+							<div class="profile-text">
+								<span class="profile-title">ALICE WARD</span>
+								<span class="date">30 Nov 2019</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn-next"></button>
+			<button class="btn-prev"></button>
+			<div class="pagination">
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery-line"></div>
+			<h2 class="gallery-title">GALLERY</h2>
+			<div class="image-holder">
+				<ul class="image-list">
+					<li class="image-item image-item1"><img src="src/image/gallery1.png" alt=""></li>
+					<li class="image-item image-item2"><img src="src/image/gallery2.png" alt=""></li>
+					<li class="image-item image-item3"><img src="src/image/gallery3.png" alt=""></li>
+					<li class="image-item image-item4"><img src="src/image/gallery4.png" alt=""></li>
+					<li class="image-item image-item5"><img src="src/image/gallery5.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="btn-holder">
+			<a href="#" class="gallery-btn">SEE MORE</a>
+			</div>
+		</div>
+	</section>
+</main>
 </body>
 </html>
